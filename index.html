@@ -82,19 +82,34 @@
                     </div>
                 </div>
             </div>
-            <div class="container section">
+            <section class="section" id="category">
+                <div class="container">
                 <h4 class="center-align">Select a <em class="orange-text text-darken-4"> <strong>category</strong></em></h4>
                     <div class="row">
                         <div class="col l4">
-                            <a href=""><img src="img/cake-main.jpg" alt="cake-main" class="responsive-img"></a>
+                            <a href="/">
+                                <div class="card rounded-edges">
+                                    <img src="img/cake-main.jpg" alt="cake-main" class="responsive-img rounded-edges">
+                                        <div class="overlay">
+                                            <div class="overlay-text">Chicken
+                                                <i class="material-icons white-text" style="transform: rotate(-45deg);">arrow_forward</i>
+                                            </div>
+                                        </div>
+                                </div>
+                            </a>
                         </div>
                         <div class="col l4">
-                            <a href=""><img src="img/chicken-main.jpg" alt="chicken-main" class="responsive-img"></a>
+                            <a href="/">
+                                <div class="card rounded-edges">
+                                    <div class="card-imge"></div>
+                                </div>
+                                <img src="img/chicken-main.jpg" alt="chicken-main" class="responsive-img"></a>
                         </div>
                         <div class="col l4">
                             <a href=""><img src="img/soup-main.jpg" alt="soup-main" class="responsive-img"></a>
                         </div>
                     </div>
+                </div>
             </div>
         </section>
         <section>
@@ -111,24 +126,25 @@
         </section>
         <section>
             <div class="black">
-                <div class="container">
-                    <h4 class=" center-align white-text">See our <em class="orange-text text-darken-4"><strong>numbers</strong></em></h4>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col l4">
-                                    <h3 class="white-text">27k+</h3>
-                                    <p class="orange-text text-darken-4">active user each month</p>
+                <div class="section">
+                    <div class="container">
+                        <h4 class=" center-align white-text">See our <em class="orange-text text-darken-4"><strong>numbers</strong></em></h4>
+                                <div class="row">
+                                    <div class="col l4 center">
+                                        <h3 class="white-text">27k+</h3>
+                                        <p class="orange-text text-darken-4">active user each month</p>
+                                    </div>
+                                    <div class="col l4 center">
+                                        <h3 class="white-text">800+</h3>
+                                        <p class="orange-text text-darken-4">available recipes till date</p>
+                                    </div>
+                                    <div class="col l4 center">
+                                        <h3 class="white-text">30+</h3>
+                                        <p class="orange-text text-darken-4">chefs for consultation</p>
+                                    </div>
                                 </div>
-                                <div class="col l4">
-                                    <h3 class="white-text">800+</h3>
-                                    <p class="orange-text text-darken-4">available recipes till date</p>
-                                </div>
-                                <div class="col l4">
-                                    <h3 class="white-text">30+</h3>
-                                    <p class="orange-text text-darken-4">chefs for consultation</p>
-                                </div>
-                            </div>
-                        </div> 
+                            </div> 
+                    </div>
                 </div>
             </div>
         </section>
@@ -175,9 +191,11 @@
                 </div>
         </section>
     </main>
+    <div class="container">
+        <hr>
+    </div>
     <footer class="page-footer gradient-bg" id="footer">
         <div class="container">
-            <hr>
             <div class="row">
                 <div class="col s12 m3 l3">
                     <h6 class="orange-text darken-4"><strong>About</strong></h6>
@@ -201,7 +219,7 @@
                     <ul>
                         <li> <a class="black-text" href=""></a>Privacy Policy</li>
                         <li> <a class="black-text" href=""></a>Terms & Conditions</li>
-                        <li> <a class="black-text" href=""></a>Disclosure</li>
+                        <li>Disclosure</li>
                     </ul>
                 </div>
                 <div class="col s12 m3 l3">
@@ -213,20 +231,11 @@
                 </div>
             </div>
         </div>
-        <div class="center-align">&copy. Recipe.com. All right reserved.</div>
-        
+        <div class="footer-copyright">
+            <div class="container center">
+                &copy; 2025 Recipe.com. All right reserved.
+            </div>
+        </div>
     </footer>
-
-
-
-
-    <script src="js/Jquery.js"></script>
-    <script src="js/materialize.js"></script>
-    <script>
-        $(document).ready(function(){
-        $('.sidenav').sidenav();
-        $('.video').video();
-    })
-    </script>
 </body>
 </html>
