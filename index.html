@@ -10,10 +10,15 @@
 
         html{
             font-family: "Josefin Sans", sans-serif;
-        }
-        
+            }
+
+            .rounded-edges {
+                border-radius: 10px !important;
+            }
+
+            
     </style>
-        
+
 </head>
 <body>
     <header> 
@@ -34,14 +39,14 @@
                                         <li><a href="" class="orange-text text-darken-4"> <strong>Contact us</strong></a></li>
                                     </ul> 
                                 </div>
-                                <div class="col s12 l1"> 
-                                    <div class="btn  circle-btn-large orange darken-4 white-text">LOGIN</div>
+                                <div class="col s12 l1">
+                                    <div class="btn btn orange darken-4 white-text">LOGIN</div>
                                 </div>
                             </div>
                         </div>
                     </nav>
                 </div>
-                <!-- <div class="video-container"> -->
+                    <!-- <div class="video-container"> -->
                     <video src="/img/header-bg-vid.mp4" width="100%">
                         <h3 class="text-hover center-align white-text">Every Dish Tells a Story</h3>
                         <p  class="text-hover">Explore, cook and create with us.</p>
@@ -55,8 +60,8 @@
             <div class="row"> 
                 <div class="container">
                     <div class="col s12 l6"> 
-                        <h3>Start your culinary journey <em class="orange-text text-darken-4"><strong>today</strong></em></h3>
-                        <p class="flow-text"> We offer you a gateway to an expertly curated selection of global recipies, ranging from traditional dishes to innovative creations, spanning various cuisines and cooking techniques. </p>
+                        <h3>Start your culinary journey <em class="orange-text text-darken-4"><strong>today</strong></em></h3
+                    <p class="flow-text"> We offer you a gateway to an expertly curated selection of global recipies, ranging from traditional dishes to innovative creations, spanning various cuisines and cooking techniques. </p>
                         <div class="btn btn-large  rounded orange darken-4 white-text">START YOUR JOURNEY</div>
                     </div>
                     <div class="col s12 l6">
@@ -68,13 +73,22 @@
                 <h4 class="center-align">Select a <em class="orange-text text-darken-4"> <strong>category</strong></em> </h4>
                     <div class="row">
                         <div class="col l4">
-                            <a href=""><img src="img/cake-main.jpg" alt="cake-main" class="responsive-img"></a>
+                            <div class="card rounded-edges">
+                                <div class="card-image rounded-edges">
+                                    <img src="img/cake-main.jpg" alt="" class="responsive-img rounded-edges">
+                                    <div class="overlay">
+                                        <div class="overlay-text white-text">
+                                            Cakes
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col l4">
-                            <a href=""><img src="img/chicken-main.jpg" alt="chicken-main" class="responsive-img"></a>
+                            
                         </div>
                         <div class="col l4">
-                            <a href=""><img src="img/soup-main.jpg" alt="soup-main" class="responsive-img"></a>
+                            
                         </div>
                     </div>
             </div>
@@ -91,8 +105,8 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="black">
+        <section class="section">
+            <div class="black section">
                 <div class="container">
                     <h4 class=" center-align white-text">See our <em class="orange-text text-darken-4"><strong>numbers</strong></em> </h4>
                         <div class="container">
@@ -157,7 +171,7 @@
                 </div>
         </section>
     </main>
-    <footer>
+    <footer class=" #e65100 ">
         <div class="container">
             <hr>
             <div class="row">
@@ -207,7 +221,6 @@
     <script>
         $(document).ready(function(){
         $('.sidenav').sidenav();
-        $('.video').video();
     })
     </script>
 </body>
