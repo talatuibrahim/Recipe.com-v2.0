@@ -11,6 +11,21 @@
         html{
             font-family: "Josefin Sans", sans-serif;
         }
+
+            .gradient-bg {
+                background: linear-gradient(to bottom, #ffffff, #e65100);
+            }
+
+            .rounded-edges {
+                border-radius: 10px !important;
+            }
+
+            .card-image:hover .overlay {
+                border-radius: 10px;
+                opacity: 1;
+                cursor: pointer;
+                text-decoration: underline white;
+            }
         
     </style>
         
@@ -43,7 +58,10 @@
                 </div>
                 <!-- <div class="video-container"> -->
                     <video src="/img/header-bg-vid.mp4" width="100%">
-                        <h3 class="text-hover center-align white-text">Every Dish Tells a Story</h3>
+                        <div class="video-overlay">
+                            <div class="hide-on-med"></div>
+                        </div>
+                        <h1 class="text-hover center-align white-text">Every Dish Tells a Story</h1>
                         <p  class="text-hover">Explore, cook and create with us.</p>
                         <div class="btn btn orange darken-4 white-text">Get Started</div>
                     </video>
@@ -64,8 +82,8 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <h4 class="center-align">Select a <em class="orange-text text-darken-4"> <strong>category</strong></em> </h4>
+            <div class="container section">
+                <h4 class="center-align">Select a <em class="orange-text text-darken-4"> <strong>category</strong></em></h4>
                     <div class="row">
                         <div class="col l4">
                             <a href=""><img src="img/cake-main.jpg" alt="cake-main" class="responsive-img"></a>
@@ -85,7 +103,7 @@
                     <img src="img/chef.jpg" alt="chef" class="responsive-img">
                 </div>
                 <div class="col s12 l5">
-                    <h2>Crafted by Culinary <em class="pink-text text-darken-3"><strong>Wizards.</strong></em> </h2>
+                    <h2>Crafted by Culinary <em class="pink-text text-darken-3"><strong>Wizards.</strong></em></h2>
                     <p class="flow-text">Discover a world of flavourfull options that promise mouthwatering results, maticulously curated by culinary experts, all at your finger tips. Easy as pie, isn't it?</p>
                     <div class="btn btn-large rounded pink darken-4 white-text">START COOKING</div>
                 </div>
@@ -94,7 +112,7 @@
         <section>
             <div class="black">
                 <div class="container">
-                    <h4 class=" center-align white-text">See our <em class="orange-text text-darken-4"><strong>numbers</strong></em> </h4>
+                    <h4 class=" center-align white-text">See our <em class="orange-text text-darken-4"><strong>numbers</strong></em></h4>
                         <div class="container">
                             <div class="row">
                                 <div class="col l4">
@@ -157,33 +175,33 @@
                 </div>
         </section>
     </main>
-    <footer>
+    <footer class="page-footer gradient-bg" id="footer">
         <div class="container">
             <hr>
             <div class="row">
                 <div class="col s12 m3 l3">
                     <h6 class="orange-text darken-4"><strong>About</strong></h6>
                     <ul>
-                        <li>Who we are</li>
-                        <li>Meet the chef</li>
-                        <li>FAQs</li>
+                        <li> <a class="black-text" href=""></a>Who we are</li>
+                        <li> <a class="black-text" href=""></a>vMeet the chef</li>
+                        <li><a class="black-text" href=""></a> FAQs </li>
                     </ul>
                 </div>
                 <div class="col s12 m3 l3">
                     <h6 class="orange-text darken-4"><strong>Explore</strong></h6>
                     <ul>
-                        <li>Recipe</li>
-                        <li>Cake</li>
-                        <li>Chicken</li>
-                        <li>Soups</li>
+                        <li>  <a class="black-text" href=""></a>Recipe</li>
+                        <li> <a class="black-text" href=""></a>Cake</li>
+                        <li> <a class="black-text" href=""></a>Chicken</li>
+                        <li> <a class="black-text" href=""></a>Soups</li>
                     </ul>
                 </div>
                 <div class="col s12 m3 l3">
-                    <h6 class="orange-text darken-4"><strong>Legal</strong></h6>
+                    <h6 class="orange-text text darken-4"><strong>Legal</strong></h6>
                     <ul>
-                        <li>Privacy Policy</li>
-                        <li>Terms & Conditions</li>
-                        <li>Disclosure</li>
+                        <li> <a class="black-text" href=""></a>Privacy Policy</li>
+                        <li> <a class="black-text" href=""></a>Terms & Conditions</li>
+                        <li> <a class="black-text" href=""></a>Disclosure</li>
                     </ul>
                 </div>
                 <div class="col s12 m3 l3">
