@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-        /* font family (Josefin Sans)
+        /* font family (Josefin Sans) */
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
         html {
@@ -55,7 +55,10 @@
         .button-rounded-edges {
             border-radius: 10px !important;
         }
-        
+        .card-rounded-edges {
+            border-radius: 10px !important;
+        }
+
         .card-image:hover .overlay {
             border-radius: 10px;
             opacity: 1;
@@ -139,14 +142,15 @@
                 </div>
             </section>
             <!-- cards -->
-                <section class="section" id="categories">
+                <section class="section hide-on-med-and-down" id="category">
                     <div class="container">
-                        <h4 class="center">Select a <em class="orange-text text-darken-4"> category</em></h4>
+                        <h4 class="center">Select a <em class="orange-text text-darken-4"> category </em></h4>
                         <div class="row">
                             <div class="col s12 m6 l4">
-                                <div class="card rounded-edges">
-                                    <div class="card-image">
-                                        <img src="img/cake-main.jpg" alt="cake" class="responsive-img rounded egdes">
+                                <a href="/">
+                                    <div class="card rounded-edges" id="cakes">
+                                        <div class="card-image">
+                                            <img src="img/cake-main.jpg" alt="cake main" class="responsive-img rounded egdes">
                                         <div class="overlay">
                                             <div class="overlay-text">cakes
                                                 <i class="material-icons white-text" style="transform: rotate(-45ed);">arrow forword</i>
@@ -154,11 +158,14 @@
                                         </div>
                                     </div>
                                 </div>
+                            </a>
                             </div>
                             <div class="col s12 m6 l4">
-                                <div class="card rounded-edges">
-                                    <div class="card-image">
-                                        <img src="img/chicken-main.jpg" alt="chicken" class="responsive-img rounded egdes">
+                                <a href="./cakes.php">
+                                <div class="card rounded-edges" id="chicken">
+                                        <div class="card-image rounded-edges">
+                                            <img src="img/chicken-main.jpg" alt="chicken" class="responsive-img rounded egdes">
+                                        </div>
                                         <div class="overlay">
                                             <div class="overlay-text">chicken
                                                 <i class="material-icons white-text" style="transform: rotate(-45ed);">arrow forword</i>
@@ -166,9 +173,10 @@
                                         </div>
                                     </div>
                                 </div>
+                                </a>
                             </div>
                             <div class="col s12 m6 l4">
-                                <div class="card rounded-edges">
+                                <a href="/"></a><div class="card rounded-edges">
                                     <div class="card-image">
                                         <img src="img/soup-main.jpg" alt="chicken" class="responsive-img rounded egdes">
                                         <div class="overlay">
