@@ -5,16 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe.com V2.0</title>
     <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
+        /* font family (Josefin Sans)
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
         html {
             font-family: "Josefin Sans", sans-serif;
         }
 
-        .gradient-bg {
-            background: -o-linear-gradient(to bottom, #ffffff, #e65100);
+        .video-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
         }
+
+        .mobile-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+        }
+        .text-size {
+            font-size: 5px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 8);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay-text {
+            color: #ffffff;
+            font-size: 24px;
+            text-align: center;
+        } 
 
         .button-rounded-edges {
             border-radius: 10px !important;
@@ -66,9 +102,9 @@
             </div>
         </section>
     </header>
-    <!-- video content -->
     <main> 
-        <div class="video-container">
+        <!-- video content -->
+        <div class="video-container hide-on-med-and-down" id="video">
             <video src="img/header-bg-vid.mp4" class="responsive-video" width="100%"></video>
                 <div class="video-overlay">
                     <div class="hide-on-med-down white-text">
@@ -77,6 +113,15 @@
                         <a href="" class="btn btn-flat white-text orange darken-4" >GET STARTED</a>
                     </div>
                 </div>
+        </div>
+        <!-- background image -->
+        <div class="image-container hide-on-large-only">
+            <img src="img/welcome-banner.jpg" alt="background image" width="100%">
+            <div class="mobile-overlay">
+                <h1 class="white-text">Every Dish Tells A Story</h1>
+                <h4 class="white-text"> Explore, cook and create with us.</h4>
+                <a href="" class="btn btn-large white-text orange darken-4 button-rounded-edges">GET STARTED</a>
+            </div>
         </div>
         <!-- Introduction -->
             <section class="section" id="introduction">
